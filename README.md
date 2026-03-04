@@ -1,6 +1,6 @@
 # fyipedia
 
-Unified CLI for [FYIPedia](https://fyipedia.com) developer tools.
+Unified CLI for [FYIPedia](https://github.com/fyipedia) developer tools.
 
 ## Install
 
