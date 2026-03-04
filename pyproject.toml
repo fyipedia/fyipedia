@@ -1,0 +1,84 @@
+[project]
+name = "fyipedia"
+version = "0.1.0"
+description = "Unified CLI for FYIPedia developer tools — color, emoji, symbol, unicode, font, distance, time, name, unit, holiday."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+authors = [{ name = "FYIPedia" }]
+keywords = [
+    "fyipedia",
+    "cli",
+    "color",
+    "emoji",
+    "unicode",
+    "distance",
+    "timezone",
+    "unit-conversion",
+    "developer-tools",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Typing :: Typed",
+    "Environment :: Console",
+]
+dependencies = [
+    "typer>=0.15",
+    "rich>=13.0",
+]
+
+[project.optional-dependencies]
+# Phase 2 packages (published on PyPI)
+color = ["colorfyi[cli]>=0.1"]
+emoji = ["emojifyi[cli]>=0.1"]
+symbol = ["symbolfyi[cli]>=0.1"]
+unicode = ["unicodefyi[cli]>=0.1"]
+font = ["fontfyi[cli]>=0.1"]
+# Wave 2 packages — uncomment after PyPI publish:
+# distance = ["distancefyi[cli]>=0.1"]
+# time = ["timefyi[cli]>=0.1"]
+# name = ["namefyi[cli]>=0.1"]
+# unit = ["unitfyi[cli]>=0.1"]
+# holiday = ["holidayfyi[cli]>=0.1"]
+all = [
+    "fyipedia[color,emoji,symbol,unicode,font]",
+]
+dev = [
+    "ruff>=0.11",
+    "mypy>=1.15",
+    "pytest>=8.0",
+]
+
+[project.scripts]
+fyi = "fyipedia.cli:app"
+
+[project.urls]
+Homepage = "https://fyipedia.com"
+Repository = "https://github.com/fyipedia/fyipedia"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.ruff]
+target-version = "py310"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM", "RUF"]
+ignore = ["RUF022"]
+
+[tool.mypy]
+strict = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
