@@ -8,6 +8,10 @@ Unified CLI for the [FYIPedia](https://github.com/fyipedia) developer tools ecos
 
 > **Install once, use everything.** Each plugin is loaded lazily -- only installed packages are registered. Install all 10 tools or pick just the ones you need.
 
+<p align="center">
+  <img src="demo.gif" alt="fyipedia demo — unified CLI for 10 FYI tools" width="800">
+</p>
+
 ## Install
 
 ```bash
