@@ -12,6 +12,30 @@ Unified CLI for the [FYIPedia](https://github.com/fyipedia) developer tools ecos
   <img src="demo.gif" alt="fyipedia demo — unified CLI for 10 FYI tools" width="800">
 </p>
 
+## Table of Contents
+
+- [Install](#install)
+- [Quick Start](#quick-start)
+- [Complete Command Reference](#complete-command-reference)
+  - [`fyi color` -- Color Tools](#fyi-color----color-tools)
+  - [`fyi emoji` -- Emoji Tools](#fyi-emoji----emoji-tools)
+  - [`fyi symbol` -- Symbol Encoding](#fyi-symbol----symbol-encoding)
+  - [`fyi unicode` -- Unicode Characters](#fyi-unicode----unicode-characters)
+  - [`fyi font` -- Google Fonts](#fyi-font----google-fonts)
+  - [`fyi distance` -- Distance Calculation](#fyi-distance----distance-calculation)
+  - [`fyi time` -- Timezone Operations](#fyi-time----timezone-operations)
+  - [`fyi unit` -- Unit Conversion](#fyi-unit----unit-conversion)
+  - [`fyi name` -- Name Tools](#fyi-name----name-tools)
+  - [`fyi holiday` -- Holiday Dates](#fyi-holiday----holiday-dates)
+  - [`fyi version` -- Plugin Status](#fyi-version----plugin-status)
+- [Plugin Architecture](#plugin-architecture)
+- [Available Plugins](#available-plugins)
+- [Features](#features)
+- [Also Available as MCP Server](#also-available-as-mcp-server)
+- [FYIPedia Developer Tools](#fyipedia-developer-tools)
+- [Links](#links)
+- [License](#license)
+
 ## Install
 
 ```bash
