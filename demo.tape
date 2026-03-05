@@ -6,19 +6,22 @@ Set Width 920
 Set Height 620
 Set Shell "zsh"
 Set Theme "Catppuccin Mocha"
-Set TypingSpeed 35ms
+Set TypingSpeed 30ms
 Set Padding 20
 
-Type "fyi version"
+# Install + run CLI (uv creates temp env)
+Type "uvx --from 'fyipedia[all]' fyi version"
+Enter
+Sleep 2.5s
+
+# Color info
+Type "uvx --from 'fyipedia[all]' fyi color info FF6B35"
 Enter
 Sleep 3s
 
-Type "fyi color info FF6B35"
+# Unit conversion
+Type "uvx --from 'fyipedia[all]' fyi unit convert 100 kilometer mile"
 Enter
 Sleep 3s
 
-Type "fyi unit convert 100 kilometer mile"
-Enter
-Sleep 3s
-
-Sleep 2s
+Sleep 1s
