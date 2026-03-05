@@ -16,6 +16,12 @@ Unified CLI for the [FYIPedia](https://github.com/fyipedia) developer tools ecos
 
 - [Install](#install)
 - [Quick Start](#quick-start)
+- [What You Can Do](#what-you-can-do)
+  - [Color Tools](#color-tools)
+  - [Emoji & Unicode](#emoji--unicode)
+  - [Distance & Time](#distance--time)
+  - [Units & Holidays](#units--holidays)
+  - [Fonts & Symbols](#fonts--symbols)
 - [Complete Command Reference](#complete-command-reference)
   - [`fyi color` -- Color Tools](#fyi-color----color-tools)
   - [`fyi emoji` -- Emoji Tools](#fyi-emoji----emoji-tools)
@@ -112,6 +118,79 @@ fyi font pairings inter
 # Show installed plugins and versions
 fyi version
 ```
+
+## What You Can Do
+
+### Color Tools
+
+Colors are defined by mathematical relationships across multiple color spaces. The `fyi color` commands let you convert between 7 color spaces (RGB, HSL, HSV, CMYK, Lab, OKLCH, hex), check WCAG 2.1 accessibility contrast ratios, generate harmonious color palettes, and simulate how colors appear to people with color vision deficiencies like protanopia or deuteranopia.
+
+```bash
+fyi color info FF6B35          # Convert to 7 color spaces
+fyi color contrast 1A1A2E F0F0F0  # WCAG contrast ratio + AA/AAA pass/fail
+fyi color shades 3B82F6        # Generate Tailwind-style 50-950 shade palette
+fyi color blindness FF5733     # Simulate protanopia, deuteranopia, tritanopia
+fyi color harmonies 8B5CF6     # Complementary, analogous, triadic, tetradic
+```
+
+Learn more: [ColorFYI](https://colorfyi.com/) · [Color Converter](https://colorfyi.com/tools/converter/)
+
+### Emoji & Unicode
+
+Unicode 16.0 defines 3,953 emoji characters across 10 categories, each with multiple encoding representations. The `fyi emoji` commands search the full emoji dataset and encode characters in 8 formats (UTF-8, HTML, CSS, JavaScript, Python, Java). The `fyi unicode` commands cover the broader Unicode standard with 17 encoding formats and 90 HTML entity mappings.
+
+```bash
+fyi emoji search celebration   # Search 3,953 emojis by keyword
+fyi emoji encode "🎉"          # 8 encodings: UTF-8, HTML, CSS, JS, Python, Java
+fyi unicode info U+2764        # Full Unicode character info (name, block, script)
+fyi unicode encode U+00E9      # 17 encodings including Go, Rust, C/C++
+fyi unicode search arrow       # Search characters by name
+```
+
+Learn more: [EmojiFYI](https://emojifyi.com/) · [UnicodeFYI](https://unicodefyi.com/)
+
+### Distance & Time
+
+The Haversine formula calculates great-circle distances between any two points on Earth using latitude and longitude coordinates. The `fyi distance` commands compute distances in kilometers, miles, and nautical miles, along with compass bearings, geographic midpoints, and estimated travel times. The `fyi time` commands handle IANA timezone conversions, UTC offsets, DST transitions, and business hours overlap across time zones.
+
+```bash
+fyi distance calc --lat1 37.57 --lon1 126.98 --lat2 35.68 --lon2 139.65  # Seoul to Tokyo
+fyi distance bearing --lat1 40.7 --lon1 -74.0 --lat2 51.5 --lon2 -0.1   # NYC to London bearing
+fyi time now Asia/Seoul        # Current time with UTC offset and DST status
+fyi time diff Asia/Seoul America/New_York  # Time difference between zones
+fyi time convert "2026-03-05 09:00" Asia/Seoul America/New_York  # Convert specific time
+```
+
+Learn more: [DistanceFYI](https://distancefyi.com/) · [TimeFYI](https://timefyi.com/)
+
+### Units & Holidays
+
+The SI system and its extensions define a web of conversion factors across 20 measurement categories. The `fyi unit` commands convert between 220 units with Decimal precision -- from everyday conversions like Celsius to Fahrenheit, to specialized units like pascals to atmospheres. The `fyi holiday` commands look up public holidays for 100+ countries using ISO codes, calculate Easter dates (Western and Orthodox), and check whether a given date is a holiday.
+
+```bash
+fyi unit convert 100 celsius fahrenheit   # Temperature conversion
+fyi unit convert 70 kilogram pound        # Weight conversion
+fyi unit categories                       # List all 20 measurement categories
+fyi holiday upcoming US                   # Next public holidays in the United States
+fyi holiday easter 2026                   # Western Easter date
+fyi holiday check 2026-12-25 US,KR,JP    # Check holidays across countries
+```
+
+Learn more: [UnitFYI](https://unitfyi.com/) · [HolidayFYI](https://holidayfyi.com/)
+
+### Fonts & Symbols
+
+Google Fonts hosts over 1,700 font families used on millions of websites. The `fyi font` commands retrieve metadata for popular fonts including available weights, language subsets, CSS import snippets, and curated pairing recommendations. The `fyi symbol` commands encode any character in 11 formats (Unicode escape, HTML decimal/hex/entity, CSS, JavaScript, Python, Java, UTF-8/16, URL encoding) and expose Unicode properties like bidirectional class, script, and block membership.
+
+```bash
+fyi font info inter            # Metadata: weights, subsets, designer, popularity rank
+fyi font pairings inter        # Curated font pairing recommendations
+fyi font css roboto            # Ready-to-use CSS import + font-family declaration
+fyi symbol info "@"            # Unicode properties + 11 encoding formats
+fyi symbol encode "->"         # Encode any symbol in 11 formats
+```
+
+Learn more: [FontFYI](https://fontfyi.com/) · [SymbolFYI](https://symbolfyi.com/)
 
 ## Complete Command Reference
 
