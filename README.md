@@ -1,6 +1,6 @@
 # fyipedia
 
-[![PyPI](https://img.shields.io/pypi/v/fyipedia)](https://pypi.org/project/fyipedia/)
+[![PyPI version](https://agentgif.com/badge/pypi/fyipedia/version.svg)](https://pypi.org/project/fyipedia/)
 [![Python](https://img.shields.io/pypi/pyversions/fyipedia)](https://pypi.org/project/fyipedia/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
@@ -341,16 +341,16 @@ def hello(name: str) -> None:
 
 | Plugin | Package | PyPI | Description |
 |--------|---------|------|-------------|
-| `color` | [colorfyi](https://github.com/fyipedia/colorfyi) | [![PyPI](https://img.shields.io/pypi/v/colorfyi)](https://pypi.org/project/colorfyi/) | Color conversion (7 spaces), WCAG contrast, harmonies, shades, color blindness simulation |
-| `emoji` | [emojifyi](https://github.com/fyipedia/emojifyi) | [![PyPI](https://img.shields.io/pypi/v/emojifyi)](https://pypi.org/project/emojifyi/) | 3,953 emoji metadata, search, 8 encoding formats |
-| `symbol` | [symbolfyi](https://github.com/fyipedia/symbolfyi) | [![PyPI](https://img.shields.io/pypi/v/symbolfyi)](https://pypi.org/project/symbolfyi/) | Symbol encoding (11 formats), Unicode properties |
-| `unicode` | [unicodefyi](https://github.com/fyipedia/unicodefyi) | [![PyPI](https://img.shields.io/pypi/v/unicodefyi)](https://pypi.org/project/unicodefyi/) | Unicode character info, 17 encodings, 90 HTML entities |
-| `font` | [fontfyi](https://github.com/fyipedia/fontfyi) | [![PyPI](https://img.shields.io/pypi/v/fontfyi)](https://pypi.org/project/fontfyi/) | 50 Google Fonts metadata, CSS snippets, font pairings |
-| `distance` | [distancefyi](https://github.com/fyipedia/distancefyi) | [![PyPI](https://img.shields.io/pypi/v/distancefyi)](https://pypi.org/project/distancefyi/) | Haversine distance, bearing, midpoint, travel times |
-| `time` | [timefyi](https://github.com/fyipedia/timefyi) | [![PyPI](https://img.shields.io/pypi/v/timefyi)](https://pypi.org/project/timefyi/) | Timezone operations, time differences, sunrise/sunset |
-| `name` | [namefyi](https://github.com/fyipedia/namefyi) | [![PyPI](https://img.shields.io/pypi/v/namefyi)](https://pypi.org/project/namefyi/) | Korean romanization, Five Elements, CJK stroke count |
-| `unit` | [unitfyi](https://github.com/fyipedia/unitfyi) | [![PyPI](https://img.shields.io/pypi/v/unitfyi)](https://pypi.org/project/unitfyi/) | 220 units across 20 categories, Decimal precision |
-| `holiday` | [holidayfyi](https://github.com/fyipedia/holidayfyi) | [![PyPI](https://img.shields.io/pypi/v/holidayfyi)](https://pypi.org/project/holidayfyi/) | Holiday dates for 100+ countries, Easter calculation |
+| `color` | [colorfyi](https://github.com/fyipedia/colorfyi) | [![PyPI version](https://agentgif.com/badge/pypi/colorfyi/version.svg)](https://pypi.org/project/colorfyi/) | Color conversion (7 spaces), WCAG contrast, harmonies, shades, color blindness simulation |
+| `emoji` | [emojifyi](https://github.com/fyipedia/emojifyi) | [![PyPI version](https://agentgif.com/badge/pypi/emojifyi/version.svg)](https://pypi.org/project/emojifyi/) | 3,953 emoji metadata, search, 8 encoding formats |
+| `symbol` | [symbolfyi](https://github.com/fyipedia/symbolfyi) | [![PyPI version](https://agentgif.com/badge/pypi/symbolfyi/version.svg)](https://pypi.org/project/symbolfyi/) | Symbol encoding (11 formats), Unicode properties |
+| `unicode` | [unicodefyi](https://github.com/fyipedia/unicodefyi) | [![PyPI version](https://agentgif.com/badge/pypi/unicodefyi/version.svg)](https://pypi.org/project/unicodefyi/) | Unicode character info, 17 encodings, 90 HTML entities |
+| `font` | [fontfyi](https://github.com/fyipedia/fontfyi) | [![PyPI version](https://agentgif.com/badge/pypi/fontfyi/version.svg)](https://pypi.org/project/fontfyi/) | 50 Google Fonts metadata, CSS snippets, font pairings |
+| `distance` | [distancefyi](https://github.com/fyipedia/distancefyi) | [![PyPI version](https://agentgif.com/badge/pypi/distancefyi/version.svg)](https://pypi.org/project/distancefyi/) | Haversine distance, bearing, midpoint, travel times |
+| `time` | [timefyi](https://github.com/fyipedia/timefyi) | [![PyPI version](https://agentgif.com/badge/pypi/timefyi/version.svg)](https://pypi.org/project/timefyi/) | Timezone operations, time differences, sunrise/sunset |
+| `name` | [namefyi](https://github.com/fyipedia/namefyi) | [![PyPI version](https://agentgif.com/badge/pypi/namefyi/version.svg)](https://pypi.org/project/namefyi/) | Korean romanization, Five Elements, CJK stroke count |
+| `unit` | [unitfyi](https://github.com/fyipedia/unitfyi) | [![PyPI version](https://agentgif.com/badge/pypi/unitfyi/version.svg)](https://pypi.org/project/unitfyi/) | 220 units across 20 categories, Decimal precision |
+| `holiday` | [holidayfyi](https://github.com/fyipedia/holidayfyi) | [![PyPI version](https://agentgif.com/badge/pypi/holidayfyi/version.svg)](https://pypi.org/project/holidayfyi/) | Holiday dates for 100+ countries, Easter calculation |
 
 ## Features
 
